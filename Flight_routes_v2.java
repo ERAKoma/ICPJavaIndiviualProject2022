@@ -52,7 +52,7 @@ public class Flight_routes_v2 {
         List<String> startend = new ArrayList<String>();
         Scanner s_e = new Scanner(
                 new FileReader("C:\\Users\\afeny\\OneDrive\\Desktop\\ICP\\Individual Project 1\\path.txt"))
-                .useDelimiter(",");
+                .useDelimiter(",\\s*");
         String read;
         while (s_e.hasNextLine()) {
             read = s_e.next();
@@ -103,7 +103,7 @@ public class Flight_routes_v2 {
         // Writing routes into .txt file
         int stops = 0;
         int flights = 0;
-        File path_file = new File("path.txt");
+        File path_file = new File("path_out.txt");
         FileOutputStream path_out = new FileOutputStream(path_file);
         BufferedWriter pob = new BufferedWriter(new OutputStreamWriter(path_out));
 

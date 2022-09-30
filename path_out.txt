@@ -1,0 +1,4 @@
+2B from AER to KZN 0 stops
+2B from KZN to AER 0 stops
+Total flights: 11
+Total additional flights: 0
